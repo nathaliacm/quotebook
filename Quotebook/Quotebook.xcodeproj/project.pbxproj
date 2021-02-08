@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		566850E225D1F4CE0092A4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566850E125D1F4CE0092A4F4 /* AppDelegate.swift */; };
 		566850E425D1F4CE0092A4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566850E325D1F4CE0092A4F4 /* SceneDelegate.swift */; };
-		566850E625D1F4CE0092A4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566850E525D1F4CE0092A4F4 /* ViewController.swift */; };
-		566850E925D1F4CE0092A4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566850E725D1F4CE0092A4F4 /* Main.storyboard */; };
+		566850E625D1F4CE0092A4F4 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566850E525D1F4CE0092A4F4 /* BookViewController.swift */; };
+		566850E925D1F4CE0092A4F4 /* BookView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566850E725D1F4CE0092A4F4 /* BookView.storyboard */; };
 		566850EC25D1F4CE0092A4F4 /* Quotebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 566850EA25D1F4CE0092A4F4 /* Quotebook.xcdatamodeld */; };
 		566850EE25D1F4D00092A4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566850ED25D1F4D00092A4F4 /* Assets.xcassets */; };
 		566850F125D1F4D00092A4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,10 @@
 		5668510725D1F4D00092A4F4 /* QuotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668510625D1F4D00092A4F4 /* QuotebookUITests.swift */; };
 		5668511D25D1F6070092A4F4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668511C25D1F6070092A4F4 /* ViewModel.swift */; };
 		5668512F25D1F9CF0092A4F4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5668512E25D1F9CF0092A4F4 /* .swiftlint.yml */; };
+		5668513D25D2016D0092A4F4 /* QuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5668513C25D2016D0092A4F4 /* QuoteView.storyboard */; };
+		5668514225D2018B0092A4F4 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668514125D2018B0092A4F4 /* QuoteViewController.swift */; };
+		5668514725D201AD0092A4F4 /* AddQuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */; };
+		5668514C25D201C30092A4F4 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,8 @@
 		566850DE25D1F4CE0092A4F4 /* Quotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566850E125D1F4CE0092A4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566850E325D1F4CE0092A4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		566850E525D1F4CE0092A4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		566850E825D1F4CE0092A4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566850E525D1F4CE0092A4F4 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		566850E825D1F4CE0092A4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BookView.storyboard; sourceTree = "<group>"; };
 		566850EB25D1F4CE0092A4F4 /* Quotebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quotebook.xcdatamodel; sourceTree = "<group>"; };
 		566850ED25D1F4D00092A4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566850F025D1F4D00092A4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,10 @@
 		5668510825D1F4D00092A4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5668511C25D1F6070092A4F4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5668512E25D1F9CF0092A4F4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5668513C25D2016D0092A4F4 /* QuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteView.storyboard; sourceTree = "<group>"; };
+		5668514125D2018B0092A4F4 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddQuoteView.storyboard; sourceTree = "<group>"; };
+		5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +114,10 @@
 		566850E025D1F4CE0092A4F4 /* Quotebook */ = {
 			isa = PBXGroup;
 			children = (
-				5668511B25D1F5E90092A4F4 /* ViewModels */,
-				5668511A25D1F5C80092A4F4 /* Models */,
-				5668511925D1F5AE0092A4F4 /* Controllers */,
 				5668511825D1F59D0092A4F4 /* Delegates */,
+				5668511A25D1F5C80092A4F4 /* Models */,
+				5668511B25D1F5E90092A4F4 /* ViewModels */,
+				5668511925D1F5AE0092A4F4 /* Controllers */,
 				5668511725D1F5820092A4F4 /* Views */,
 				566850ED25D1F4D00092A4F4 /* Assets.xcassets */,
 				566850F225D1F4D00092A4F4 /* Info.plist */,
@@ -139,7 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */,
-				566850E725D1F4CE0092A4F4 /* Main.storyboard */,
+				566850E725D1F4CE0092A4F4 /* BookView.storyboard */,
+				5668513C25D2016D0092A4F4 /* QuoteView.storyboard */,
+				5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,7 +166,9 @@
 		5668511925D1F5AE0092A4F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				566850E525D1F4CE0092A4F4 /* ViewController.swift */,
+				566850E525D1F4CE0092A4F4 /* BookViewController.swift */,
+				5668514125D2018B0092A4F4 /* QuoteViewController.swift */,
+				5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5668512F25D1F9CF0092A4F4 /* .swiftlint.yml in Resources */,
+				5668513D25D2016D0092A4F4 /* QuoteView.storyboard in Resources */,
 				566850F125D1F4D00092A4F4 /* LaunchScreen.storyboard in Resources */,
 				566850EE25D1F4D00092A4F4 /* Assets.xcassets in Resources */,
-				566850E925D1F4CE0092A4F4 /* Main.storyboard in Resources */,
+				5668514725D201AD0092A4F4 /* AddQuoteView.storyboard in Resources */,
+				566850E925D1F4CE0092A4F4 /* BookView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,9 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5668514C25D201C30092A4F4 /* AddQuoteViewController.swift in Sources */,
 				5668511D25D1F6070092A4F4 /* ViewModel.swift in Sources */,
-				566850E625D1F4CE0092A4F4 /* ViewController.swift in Sources */,
+				566850E625D1F4CE0092A4F4 /* BookViewController.swift in Sources */,
 				566850E225D1F4CE0092A4F4 /* AppDelegate.swift in Sources */,
+				5668514225D2018B0092A4F4 /* QuoteViewController.swift in Sources */,
 				566850E425D1F4CE0092A4F4 /* SceneDelegate.swift in Sources */,
 				566850EC25D1F4CE0092A4F4 /* Quotebook.xcdatamodeld in Sources */,
 			);
@@ -369,12 +385,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		566850E725D1F4CE0092A4F4 /* Main.storyboard */ = {
+		566850E725D1F4CE0092A4F4 /* BookView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				566850E825D1F4CE0092A4F4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = BookView.storyboard;
 			sourceTree = "<group>";
 		};
 		566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */ = {
