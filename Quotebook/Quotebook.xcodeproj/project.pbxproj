@@ -18,10 +18,13 @@
 		5668510725D1F4D00092A4F4 /* QuotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668510625D1F4D00092A4F4 /* QuotebookUITests.swift */; };
 		5668511D25D1F6070092A4F4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668511C25D1F6070092A4F4 /* ViewModel.swift */; };
 		5668512F25D1F9CF0092A4F4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5668512E25D1F9CF0092A4F4 /* .swiftlint.yml */; };
-		5668513D25D2016D0092A4F4 /* QuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5668513C25D2016D0092A4F4 /* QuoteView.storyboard */; };
-		5668514225D2018B0092A4F4 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668514125D2018B0092A4F4 /* QuoteViewController.swift */; };
-		5668514725D201AD0092A4F4 /* AddQuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */; };
-		5668514C25D201C30092A4F4 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */; };
+		5668516225D2D3D40092A4F4 /* SukhumvitSet-Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5668515E25D2D2650092A4F4 /* SukhumvitSet-Text.ttf */; };
+		5668516C25D346280092A4F4 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5668516B25D346280092A4F4 /* CardView.xib */; };
+		5668517125D346770092A4F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668517025D346770092A4F4 /* CardView.swift */; };
+		566851B925D41A2E0092A4F4 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566851B825D41A2E0092A4F4 /* QuoteViewController.swift */; };
+		566851BE25D41A590092A4F4 /* QuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566851BD25D41A590092A4F4 /* QuoteView.storyboard */; };
+		566851C625D41FD60092A4F4 /* AddQuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */; };
+		566851CB25D41FFE0092A4F4 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566851CA25D41FFE0092A4F4 /* AddQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +62,13 @@
 		5668510825D1F4D00092A4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5668511C25D1F6070092A4F4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5668512E25D1F9CF0092A4F4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		5668513C25D2016D0092A4F4 /* QuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteView.storyboard; sourceTree = "<group>"; };
-		5668514125D2018B0092A4F4 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddQuoteView.storyboard; sourceTree = "<group>"; };
-		5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
+		5668515E25D2D2650092A4F4 /* SukhumvitSet-Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SukhumvitSet-Text.ttf"; path = "../../../../Downloads/SukhumvitSet-Text.ttf"; sourceTree = "<group>"; };
+		5668516B25D346280092A4F4 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		5668517025D346770092A4F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		566851B825D41A2E0092A4F4 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		566851BD25D41A590092A4F4 /* QuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteView.storyboard; sourceTree = "<group>"; };
+		566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddQuoteView.storyboard; sourceTree = "<group>"; };
+		566851CA25D41FFE0092A4F4 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				5668511925D1F5AE0092A4F4 /* Controllers */,
 				5668511725D1F5820092A4F4 /* Views */,
 				566850ED25D1F4D00092A4F4 /* Assets.xcassets */,
+				5668515E25D2D2650092A4F4 /* SukhumvitSet-Text.ttf */,
 				566850F225D1F4D00092A4F4 /* Info.plist */,
 			);
 			path = Quotebook;
@@ -146,10 +153,11 @@
 		5668511725D1F5820092A4F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */,
 				566850E725D1F4CE0092A4F4 /* BookView.storyboard */,
-				5668513C25D2016D0092A4F4 /* QuoteView.storyboard */,
-				5668514625D201AD0092A4F4 /* AddQuoteView.storyboard */,
+				566851BD25D41A590092A4F4 /* QuoteView.storyboard */,
+				566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */,
+				5668516725D341460092A4F4 /* CardView */,
+				566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				566850E525D1F4CE0092A4F4 /* BookViewController.swift */,
-				5668514125D2018B0092A4F4 /* QuoteViewController.swift */,
-				5668514B25D201C30092A4F4 /* AddQuoteViewController.swift */,
+				566851B825D41A2E0092A4F4 /* QuoteViewController.swift */,
+				566851CA25D41FFE0092A4F4 /* AddQuoteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +195,15 @@
 				5668511C25D1F6070092A4F4 /* ViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5668516725D341460092A4F4 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				5668516B25D346280092A4F4 /* CardView.xib */,
+				5668517025D346770092A4F4 /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +310,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566851C625D41FD60092A4F4 /* AddQuoteView.storyboard in Resources */,
 				5668512F25D1F9CF0092A4F4 /* .swiftlint.yml in Resources */,
-				5668513D25D2016D0092A4F4 /* QuoteView.storyboard in Resources */,
+				5668516C25D346280092A4F4 /* CardView.xib in Resources */,
+				566851BE25D41A590092A4F4 /* QuoteView.storyboard in Resources */,
 				566850F125D1F4D00092A4F4 /* LaunchScreen.storyboard in Resources */,
 				566850EE25D1F4D00092A4F4 /* Assets.xcassets in Resources */,
-				5668514725D201AD0092A4F4 /* AddQuoteView.storyboard in Resources */,
 				566850E925D1F4CE0092A4F4 /* BookView.storyboard in Resources */,
+				5668516225D2D3D40092A4F4 /* SukhumvitSet-Text.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5668514C25D201C30092A4F4 /* AddQuoteViewController.swift in Sources */,
 				5668511D25D1F6070092A4F4 /* ViewModel.swift in Sources */,
 				566850E625D1F4CE0092A4F4 /* BookViewController.swift in Sources */,
 				566850E225D1F4CE0092A4F4 /* AppDelegate.swift in Sources */,
-				5668514225D2018B0092A4F4 /* QuoteViewController.swift in Sources */,
 				566850E425D1F4CE0092A4F4 /* SceneDelegate.swift in Sources */,
+				5668517125D346770092A4F4 /* CardView.swift in Sources */,
+				566851CB25D41FFE0092A4F4 /* AddQuoteViewController.swift in Sources */,
+				566851B925D41A2E0092A4F4 /* QuoteViewController.swift in Sources */,
 				566850EC25D1F4CE0092A4F4 /* Quotebook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,33 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBu-0h-Fxf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="6Su-W8-yXY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotebook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="LBu-0h-Fxf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xdJ-vr-NLc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="navigationBar.prefersLargeTitles" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="CLU-Kk-SZp" kind="relationship" relationship="rootViewController" id="0Yi-1A-Kee"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgc-1r-Rpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="88"/>
+            <point key="canvasLocation" x="-1391" y="-52"/>
+        </scene>
+        <!--Quotes-->
+        <scene sceneID="0gc-5d-cp8">
+            <objects>
+                <viewController id="CLU-Kk-SZp" customClass="BookViewController" customModule="Quotebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jt6-eM-qAj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cYp-RU-Ec0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQj-4u-a4B"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cYp-RU-Ec0" firstAttribute="trailing" secondItem="pQj-4u-a4B" secondAttribute="trailing" id="Mbs-a5-yOw"/>
+                            <constraint firstItem="cYp-RU-Ec0" firstAttribute="leading" secondItem="pQj-4u-a4B" secondAttribute="leading" id="R5R-xv-7aX"/>
+                            <constraint firstItem="cYp-RU-Ec0" firstAttribute="top" secondItem="pQj-4u-a4B" secondAttribute="top" id="e1v-Jh-GOA"/>
+                            <constraint firstAttribute="bottom" secondItem="cYp-RU-Ec0" secondAttribute="bottom" id="f4e-70-bl8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quotes" id="Dg2-Mp-mol">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="uqK-Zh-UMK">
+                            <color key="tintColor" name="actionColor"/>
+                            <connections>
+                                <segue destination="5n1-uQ-cCG" kind="show" identifier="addQuoteViewSegue" id="fsO-wd-GMn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="cYp-RU-Ec0" id="R3E-Sd-hbl"/>
+                        <segue destination="L6u-A5-TqS" kind="show" identifier="quoteViewSegue" id="7dm-Ba-Vrw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJV-mm-Y1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291" y="-52"/>
+        </scene>
+        <!--AddQuoteView-->
+        <scene sceneID="ttg-Cb-uk2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddQuoteView" id="5n1-uQ-cCG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PON-y3-oE1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YT5-I3-3Lk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-70"/>
+        </scene>
+        <!--QuoteView-->
+        <scene sceneID="pXD-Ta-HN5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuoteView" id="L6u-A5-TqS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q2S-rY-ZYv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36g-6H-fzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-38"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="actionColor"/>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="actionColor">
+            <color red="0.64939159150000003" green="0.56038630010000001" blue="0.9490578771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="0.92157477139999999" green="0.92155748609999999" blue="0.92156922819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>
