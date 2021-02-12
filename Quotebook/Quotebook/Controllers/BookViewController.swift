@@ -29,8 +29,13 @@ class BookViewController: UIViewController {
     }
 
     func setUpNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.backgroundColor = .clear
+        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
 
     func setUpTableView() {

@@ -12,6 +12,7 @@ class AddQuoteViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var quoteTextView: UITextView!
     @IBOutlet weak var livroTextView: UITextView!
     @IBOutlet weak var paginaTextView: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
     var nome = "livro"
     var placeholder = ""
 
@@ -29,7 +30,8 @@ class AddQuoteViewController: UIViewController, UITextViewDelegate {
         addPlaceholder(textView: paginaTextView, text: "Digite a página")
 
         setUpSegmentedControl()
-
+        scrollView.isScrollEnabled = false
+        self.hideKeyboardWhenTappedAround()
     }
 
     @IBAction func indexChage(_ sender: UISegmentedControl) {
@@ -58,6 +60,7 @@ class AddQuoteViewController: UIViewController, UITextViewDelegate {
     }
 
     func textViewDidBeginEditing(_ textView: UITextView) {
+        scrollView.isScrollEnabled = true
         if textView.textColor == UIColor(named: "placeholderColor") {
             textView.text = nil
             textView.textColor = UIColor(named: "textColor")
@@ -65,6 +68,7 @@ class AddQuoteViewController: UIViewController, UITextViewDelegate {
     }
 
     func textViewDidEndEditing(_ textView: UITextView) {
+        scrollView.isScrollEnabled = false
         if textView.text.isEmpty {
             switch textView.restorationIdentifier {
             case "quote":
@@ -86,8 +90,25 @@ class AddQuoteViewController: UIViewController, UITextViewDelegate {
         segmentedControl.setTitleTextAttributes( [NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
         segmentedControl.setTitleTextAttributes( [NSAttributedString.Key.foregroundColor: UIColor(named: "textColor") ?? UIColor.white], for: .normal)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //dismi
+}
+
+extension AddQuoteViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AddQuoteViewController.isKeyboardActive))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func isKeyboardActive() {
+        if scrollView.isScrollEnabled {
+            dismissKeyboard()
+        }
+    }
+
+    func dismissKeyboard() {
+        if self.scrollView.contentOffset != CGPoint(x: 0, y: 0) {
+            self.scrollView.contentOffset = CGPoint(x: 0, y: -50)
+        }
+        view.endEditing(true)
+        scrollView.isScrollEnabled = false
     }
 }
