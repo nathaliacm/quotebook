@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGP-as-n8k">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,26 +8,115 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SukhumvitSet-Text.ttf">
+            <string>SukhumvitSet-Text</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Add Quote View Controller-->
         <scene sceneID="Glc-nP-BJZ">
             <objects>
                 <viewController id="eGP-as-n8k" customClass="AddQuoteViewController" customModule="Quotebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jpu-SH-v5n">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ikm-N5-m1L">
+                                <rect key="frame" x="122" y="233" width="131" height="32"/>
+                                <color key="backgroundColor" name="desselectedButton"/>
+                                <segments>
+                                    <segment title="Livro"/>
+                                    <segment title="Autor"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="actionColor"/>
+                                <connections>
+                                    <action selector="indexChage:" destination="eGP-as-n8k" eventType="valueChanged" id="06i-X5-7wl"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="quote" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-K7-wqF">
+                                <rect key="frame" x="20" y="20" width="335" height="183"/>
+                                <color key="backgroundColor" name="cardColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="quote"/>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Text" family="Sukhumvit Set" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="nome" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-pi-QZX">
+                                <rect key="frame" x="20" y="294" width="335" height="38"/>
+                                <color key="backgroundColor" name="cardColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="FIE-t1-c8M"/>
+                                </constraints>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Text" family="Sukhumvit Set" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="pagina" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-me-17M">
+                                <rect key="frame" x="20" y="352" width="335" height="38"/>
+                                <color key="backgroundColor" name="cardColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="7eu-LU-7xS"/>
+                                </constraints>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Text" family="Sukhumvit Set" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykC-an-R8p">
+                                <rect key="frame" x="315" y="170" width="25" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <color key="tintColor" name="actionColor"/>
+                                <state key="normal" image="camera.fill" catalog="system"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BD5-6F-Lg5"/>
                         <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VPL-pi-QZX" firstAttribute="leading" secondItem="BD5-6F-Lg5" secondAttribute="leading" constant="20" id="9Up-uU-bQN"/>
+                            <constraint firstItem="ikm-N5-m1L" firstAttribute="top" secondItem="hzy-K7-wqF" secondAttribute="bottom" constant="30" id="DeS-hk-VnY"/>
+                            <constraint firstItem="ykC-an-R8p" firstAttribute="leading" secondItem="hzy-K7-wqF" secondAttribute="trailing" constant="-40" id="Etw-P6-2oV"/>
+                            <constraint firstItem="Rgi-me-17M" firstAttribute="leading" secondItem="BD5-6F-Lg5" secondAttribute="leading" constant="20" id="G7S-4P-Q1y"/>
+                            <constraint firstItem="BD5-6F-Lg5" firstAttribute="bottom" secondItem="Rgi-me-17M" secondAttribute="bottom" constant="277" id="Tns-iE-uyj"/>
+                            <constraint firstItem="VPL-pi-QZX" firstAttribute="top" secondItem="ikm-N5-m1L" secondAttribute="bottom" constant="30" id="bqA-9l-l4g"/>
+                            <constraint firstItem="BD5-6F-Lg5" firstAttribute="trailing" secondItem="Rgi-me-17M" secondAttribute="trailing" constant="20" id="gL7-X1-PsH"/>
+                            <constraint firstItem="hzy-K7-wqF" firstAttribute="top" secondItem="BD5-6F-Lg5" secondAttribute="top" constant="20" id="gha-vg-mpU"/>
+                            <constraint firstItem="BD5-6F-Lg5" firstAttribute="trailing" secondItem="VPL-pi-QZX" secondAttribute="trailing" constant="20" id="h0S-KE-rQF"/>
+                            <constraint firstItem="ykC-an-R8p" firstAttribute="top" secondItem="hzy-K7-wqF" secondAttribute="bottom" constant="-33" id="jjj-oK-pWf"/>
+                            <constraint firstItem="BD5-6F-Lg5" firstAttribute="trailing" secondItem="ikm-N5-m1L" secondAttribute="trailing" constant="122" id="kNa-ek-Q3f"/>
+                            <constraint firstItem="BD5-6F-Lg5" firstAttribute="trailing" secondItem="hzy-K7-wqF" secondAttribute="trailing" constant="20" id="mFX-CO-K70"/>
+                            <constraint firstItem="ikm-N5-m1L" firstAttribute="leading" secondItem="BD5-6F-Lg5" secondAttribute="leading" constant="122" id="naC-zj-YKZ"/>
+                            <constraint firstItem="hzy-K7-wqF" firstAttribute="leading" secondItem="BD5-6F-Lg5" secondAttribute="leading" constant="20" id="qn3-BS-tNo"/>
+                            <constraint firstItem="Rgi-me-17M" firstAttribute="top" secondItem="VPL-pi-QZX" secondAttribute="bottom" constant="20" id="xRu-qh-Imr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="livroTextView" destination="VPL-pi-QZX" id="UcB-Fv-fOn"/>
+                        <outlet property="paginaTextView" destination="Rgi-me-17M" id="d7X-aX-99h"/>
+                        <outlet property="quoteTextView" destination="hzy-K7-wqF" id="Xfy-de-rDv"/>
+                        <outlet property="segmentedControl" destination="ikm-N5-m1L" id="cOG-H3-kgO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDh-LF-89g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="72"/>
+            <point key="canvasLocation" x="151.19999999999999" y="71.514242878560722"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <namedColor name="actionColor">
+            <color red="0.64899998903274536" green="0.56000000238418579" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="backgroundColor">
-            <color red="0.92157477139999999" green="0.92155748609999999" blue="0.92156922819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="cardColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="desselectedButton">
+            <color red="0.89813846350000004" green="0.89779382939999997" blue="0.91372817750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.2669999897480011" green="0.27300000190734863" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

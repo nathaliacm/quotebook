@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aZh-4d-UTi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C6L-qz-lmu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,26 +8,79 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SukhumvitSet-Text.ttf">
+            <string>SukhumvitSet-Text</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Quote View Controller-->
-        <scene sceneID="fO4-X4-J6V">
+        <scene sceneID="Gqz-d7-THv">
             <objects>
-                <viewController id="aZh-4d-UTi" customClass="QuoteViewController" customModule="Quotebook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Z1-Qh-RDa">
+                <viewController id="C6L-qz-lmu" customClass="QuoteViewController" customModule="Quotebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBy-kF-lCL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8Is-EG-hKh"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas" translatesAutoresizingMaskIntoConstraints="NO" id="Kl0-5o-srw">
+                                <rect key="frame" x="20" y="54" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="KQA-hN-Ts6"/>
+                                    <constraint firstAttribute="height" constant="30" id="byT-vq-pkX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VN-vn-UWB">
+                                <rect key="frame" x="30" y="104" width="354" height="20"/>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Text" family="Sukhumvit Set" pointSize="17"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livro/Pagina/Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwo-Qb-mXB">
+                                <rect key="frame" x="274" y="144" width="120" height="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cev-l3-NR1">
+                                <rect key="frame" x="363.5" y="54" width="30.5" height="26"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ijL-at-fGb"/>
                         <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cev-l3-NR1" firstAttribute="top" secondItem="ijL-at-fGb" secondAttribute="top" constant="10" id="01m-Fb-iUx"/>
+                            <constraint firstItem="Kl0-5o-srw" firstAttribute="top" secondItem="ijL-at-fGb" secondAttribute="top" constant="10" id="6Le-7n-p1v"/>
+                            <constraint firstItem="5VN-vn-UWB" firstAttribute="top" secondItem="Cev-l3-NR1" secondAttribute="bottom" constant="24" id="GFU-Xy-WaW"/>
+                            <constraint firstItem="ijL-at-fGb" firstAttribute="trailing" secondItem="5VN-vn-UWB" secondAttribute="trailing" constant="30" id="Ova-KL-cyq"/>
+                            <constraint firstItem="5VN-vn-UWB" firstAttribute="top" secondItem="Kl0-5o-srw" secondAttribute="bottom" constant="20" id="Qot-JP-mtr"/>
+                            <constraint firstItem="ijL-at-fGb" firstAttribute="trailing" secondItem="Cev-l3-NR1" secondAttribute="trailing" constant="20" id="du3-lI-vWE"/>
+                            <constraint firstItem="5VN-vn-UWB" firstAttribute="leading" secondItem="ijL-at-fGb" secondAttribute="leading" constant="30" id="fiW-dd-6ho"/>
+                            <constraint firstItem="pwo-Qb-mXB" firstAttribute="top" secondItem="5VN-vn-UWB" secondAttribute="bottom" constant="20" id="rD5-L3-S0Q"/>
+                            <constraint firstItem="Kl0-5o-srw" firstAttribute="leading" secondItem="ijL-at-fGb" secondAttribute="leading" constant="20" id="t7H-F1-u9D"/>
+                            <constraint firstItem="ijL-at-fGb" firstAttribute="trailing" secondItem="pwo-Qb-mXB" secondAttribute="trailing" constant="20" id="zkU-Fl-gXM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="Cev-l3-NR1" id="jwV-Fd-oNh"/>
+                        <outlet property="label" destination="pwo-Qb-mXB" id="e3j-Em-KU9"/>
+                        <outlet property="quoteLabel" destination="5VN-vn-UWB" id="5L2-1p-4Ht"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ym-o0-hXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KrH-JH-Cfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-958" y="204"/>
+            <point key="canvasLocation" x="-363.768115942029" y="67.633928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aspas" width="383" height="348"/>
         <namedColor name="backgroundColor">
-            <color red="0.92157477139999999" green="0.92155748609999999" blue="0.92156922819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.2669999897480011" green="0.27300000190734863" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

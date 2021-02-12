@@ -22,9 +22,9 @@
 		5668516C25D346280092A4F4 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5668516B25D346280092A4F4 /* CardView.xib */; };
 		5668517125D346770092A4F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5668517025D346770092A4F4 /* CardView.swift */; };
 		566851B925D41A2E0092A4F4 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566851B825D41A2E0092A4F4 /* QuoteViewController.swift */; };
-		566851BE25D41A590092A4F4 /* QuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566851BD25D41A590092A4F4 /* QuoteView.storyboard */; };
 		566851C625D41FD60092A4F4 /* AddQuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */; };
 		566851CB25D41FFE0092A4F4 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566851CA25D41FFE0092A4F4 /* AddQuoteViewController.swift */; };
+		567B1D2125D5FA6000460F39 /* QuoteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567B1D2025D5FA6000460F39 /* QuoteView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +66,9 @@
 		5668516B25D346280092A4F4 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		5668517025D346770092A4F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		566851B825D41A2E0092A4F4 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		566851BD25D41A590092A4F4 /* QuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteView.storyboard; sourceTree = "<group>"; };
 		566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddQuoteView.storyboard; sourceTree = "<group>"; };
 		566851CA25D41FFE0092A4F4 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
+		567B1D2025D5FA6000460F39 /* QuoteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuoteView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				566850E725D1F4CE0092A4F4 /* BookView.storyboard */,
-				566851BD25D41A590092A4F4 /* QuoteView.storyboard */,
 				566851C525D41FD60092A4F4 /* AddQuoteView.storyboard */,
+				567B1D2025D5FA6000460F39 /* QuoteView.storyboard */,
 				5668516725D341460092A4F4 /* CardView */,
 				566850EF25D1F4D00092A4F4 /* LaunchScreen.storyboard */,
 			);
@@ -313,8 +313,8 @@
 				566851C625D41FD60092A4F4 /* AddQuoteView.storyboard in Resources */,
 				5668512F25D1F9CF0092A4F4 /* .swiftlint.yml in Resources */,
 				5668516C25D346280092A4F4 /* CardView.xib in Resources */,
-				566851BE25D41A590092A4F4 /* QuoteView.storyboard in Resources */,
 				566850F125D1F4D00092A4F4 /* LaunchScreen.storyboard in Resources */,
+				567B1D2125D5FA6000460F39 /* QuoteView.storyboard in Resources */,
 				566850EE25D1F4D00092A4F4 /* Assets.xcassets in Resources */,
 				566850E925D1F4CE0092A4F4 /* BookView.storyboard in Resources */,
 				5668516225D2D3D40092A4F4 /* SukhumvitSet-Text.ttf in Resources */,

@@ -96,10 +96,10 @@
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="actionColor">
-            <color red="0.64939159150000003" green="0.56038630010000001" blue="0.9490578771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.64899998903274536" green="0.56000000238418579" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="backgroundColor">
-            <color red="0.92157477139999999" green="0.92155748609999999" blue="0.92156922819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
